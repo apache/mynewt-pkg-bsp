@@ -17,18 +17,11 @@
 # under the License.
 #
 
-### Entries containing `***` need to be replaced with actual values.
+# Settings this BSP defines.
+syscfg.defs:
+    TIMER_0:
+        description: 'Timer 0'
+        value:  1
 
-pkg.name: your-pkg-name
-pkg.type: bsp
-pkg.description: "Description of your package"
-pkg.author: "You <you@you.org>"
-pkg.homepage: "http://your-url.org/"
-pkg.keywords:
-
-pkg.cflags:
-
-pkg.deps:
-    # - *** <MCU-package>
-    - '@apache-mynewt-core/kernel/os'
-    - '@apache-mynewt-core/libc/baselibc'
+# Settings this BSP overrides.
+syscfg.vals:
